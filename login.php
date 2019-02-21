@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $secureLogin = 'admin';
 $securePassword = 'password';
 
@@ -16,6 +18,7 @@ if(!($secureLogin == $login && $securePassword = $password)){
     die();
 }
 
-setcookie('user_name','admin', time()+3600);
+$_SESSION['user_name'] = 'admin';
+
 header("Location: http://localhost:8080/");
 die();
