@@ -1,0 +1,12 @@
+{
+    "name": "endlesskwazar/auth-hash",
+    "authors": [
+        {
+            "name": "endlesskwazar",
+            "email": "endlesskwazar@gmail.com"
+        }
+    ],
+    "require": {
+        "windwalker/crypt": "^3.5"
+    }
+}
